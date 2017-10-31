@@ -2,12 +2,21 @@ package orgCursoAccenture.factorial;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class FactorialTest {
+	
+	private Factorial factorial;
+	
+	@Before
+	public void init() {
+		factorial = new Factorial();
+	}
+	
 	@Test
-	public void test1() {
-		Factorial factorial = new Factorial();
+	public void testFactorialOfZeroReturnOne() {
+		//Factorial factorial = new Factorial();
 		
 		long result = factorial.computar(0);
 		long expectedValue = 1;
@@ -16,8 +25,8 @@ public class FactorialTest {
 	}
 	
 	@Test
-	public void test2() {
-		Factorial factorial = new Factorial();
+	public void testFactorialOfOneReturnTwo() {
+		//Factorial factorial = new Factorial();
 		
 		long result = factorial.computar(1);
 		long expectedValue = 1;
@@ -26,8 +35,8 @@ public class FactorialTest {
 	}
 	
 	@Test
-	public void test3() {
-		Factorial factorial = new Factorial();
+	public void testFactorialOfTwoReturnTwo() {
+		//Factorial factorial = new Factorial();
 		
 		long result = factorial.computar(2);
 		long expectedValue = 2;
@@ -36,8 +45,8 @@ public class FactorialTest {
 	}
 	
 	@Test
-	public void test4() {
-		Factorial factorial = new Factorial();
+	public void testFactorialOfThreeReturnSix() {
+		//Factorial factorial = new Factorial();
 		
 		long result = factorial.computar(3);
 		long expectedValue = 6;
@@ -46,8 +55,8 @@ public class FactorialTest {
 	}
 	
 	@Test
-	public void test5() {
-		Factorial factorial = new Factorial();
+	public void testFactorialOfFiveReturnOneHundredAndTwenty() {
+		//Factorial factorial = new Factorial();
 		
 		long result = factorial.computar(5);
 		long expectedValue = 120;

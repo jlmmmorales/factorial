@@ -7,6 +7,8 @@ public class Factorial {
 			return 1;
 		} else if (valor == 2) {
 			return 2;
+		} else if (valor == 3) {
+			return 6;
 		} else {
 			return valor * computar(valor - 1);
 		}

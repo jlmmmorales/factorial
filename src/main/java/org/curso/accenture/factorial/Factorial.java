@@ -11,7 +11,7 @@ public class Factorial {
 	public long computar(long valor) {
 		long result;
 		if (valor < 0) {
-			throw new factorialException("ERROR: The value is negative." + valor);
+			throw new FactorialException("ERROR: The value is negative." + valor);
 		} else if ((valor == 0) || (valor == 1)) {
 			result = 1;
 		} else {
